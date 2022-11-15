@@ -1,0 +1,150 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    padding: 0px;  
+    margin-top: 20px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+header ul{
+    float: right;
+    color: #4152A2;
+}
+header li {
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 20px;   
+    font-family: 'Cousine', monospace;
+}
+.herolmg {
+    padding: 25px;
+    font-family: 'Cousine', monospace;
+    color: white;
+}
+.content {
+    width: 500px;
+    margin: 0 auto; 
+    text-align: center;
+    background-color: #4153a2ba;
+    padding: 3%
+}
+footer {
+    color: #4152A2;  
+}
+footer ul{
+    list-style: none;
+}
+footer li{
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 20px; 
+    font-family: 'Cousine', monospace; 
+}
+
+li:hover {
+    color:#F6B1D0;
+    cursor: pointer;
+
+}
+
+/* My UX Skills section coded using CSS flex*/
+
+.mySkills {
+    font-family: 'Inter', sans-serif;  
+}
+.mySkills > h1 {
+    text-align: center;
+    color: #F6B1D0;
+    font-family: 'Cousine', monospace;
+}
+div > h3 {
+    color: #4152A2;
+}
+.flexContainer {
+    display: flex;
+    margin: 64px;
+    text-align: center;
+}
+.flexContainer > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+  }
+
+/* My Work section constructed using CSS Grid*/
+
+.myWork {
+    font-family: 'Inter', sans-serif;
+}
+.workGrid {
+    margin: 64px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
+    grid-template-areas:
+    "img1 content1"
+    "img2 content2"
+}
+.workGrid > div {
+    background-color: #f1f1f1;
+}
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.content1 {
+    grid-area: content1;
+}
+.content2 {
+    grid-area: content2;
+}
+.img1, .img2, .content1, .content2 {
+    padding: 20px;
+}
+.myWork > h1 {
+    text-align: center;
+    color: #F6B1D0;
+    font-family: 'Cousine', monospace;
+}
+.myWork > h3 {
+    text-align: center;
+    color: #F6B1D0;
+    font-family: 'Cousine', monospace;
+}
+div > h4 {
+    color: #4152A2;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .flexContainer > div {
+        background-color: #f1f1f1;
+        width: 100%;
+    }
+    .workGrid {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "img1" 
+        "content1"
+        "img2" 
+        "content2"
+    }
+    .workGrid > div {
+    background-color: #f1f1f1;
+    }   
+}
+
+
+
+
